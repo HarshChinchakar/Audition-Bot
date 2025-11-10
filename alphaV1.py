@@ -5,7 +5,7 @@ import google.generativeai as genai
 # ----------------------------------------
 # 1. Set up Gemini API
 # ----------------------------------------
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyA5UJsnkYvIUbwwF5hd80RY0lJgHNLuZjQ")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", ")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # ----------------------------------------
@@ -239,3 +239,4 @@ if __name__ == "__main__":
 
     else:
         print("[E] No response received from Gemini.")
+
