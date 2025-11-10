@@ -8,7 +8,7 @@ import re
 import pandas as pd
 
 # 1. Configure Gemini API
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyA5UJsnkYvIUbwwF5hd80RY0lJgHNLuZjQ")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # 2. Prompt for Gemini
@@ -197,3 +197,4 @@ if uploaded_video is not None:
         else:
             st.error("The output from Gemini could not be parsed as valid JSON.")
             st.code(result_text, language='text')
+
